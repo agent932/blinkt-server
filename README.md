@@ -9,11 +9,11 @@ $ git clone git@github.com:resin-projects/simple-server-node.git
 ```
 Then add your resin.io application's remote repository to your local repository:
 ```
-$ git remote add resin username@git.resin.io:username/myapp.git
+$ git remote add balena username@git.balena-cloud.com:username/myapp.git
 ```
 and push the code to the newly added remote:
 ```
-$ git push resin master
+$ git push balena master
 ```
 It should take a few minutes for the code to push. While you wait, lets enable device URLs so we can see the server outside of our local network. This option can be found in the `Actions` tab in your device dashboard.
 
