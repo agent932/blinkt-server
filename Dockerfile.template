@@ -1,6 +1,9 @@
 # Note the node:slim image doesn't have node-gyp, so we use full master
 FROM resin/%%RESIN_MACHINE_NAME%%-node
 
+# Installing WiringPi Library Package
+RUN apt-get update && apt-get install -yq wiringpi git
+
 # Defines our working directory in container
 WORKDIR /usr/src/app
 
