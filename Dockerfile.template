@@ -2,7 +2,10 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-node
 
 # Installing WiringPi Library Package
-RUN apt-get update && apt-get install -yq wiringpi git
+RUN apt-get update && apt-get install -y wiringpi git
+RUN add-apt-repository ppa:chris-lea/node.js
+RUN apt-get update
+RUN apt-get install -y nodejs
 
 # Defines our working directory in container
 WORKDIR /usr/src/app
