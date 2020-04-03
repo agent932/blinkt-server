@@ -2,7 +2,7 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-node
 
 # Installing WiringPi Library Package
-RUN sudo apt-get install -yq wiringpi
+RUN apt-get install -yq wiringpi
 
 # Defines our working directory in container
 WORKDIR /usr/src/app
