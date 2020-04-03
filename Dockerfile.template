@@ -2,6 +2,7 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-node
 
 # Installing WiringPi Library Package
+RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -yq wiringpi
 
 # Defines our working directory in container
