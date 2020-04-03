@@ -1,5 +1,7 @@
 ## Simple Blinkt Server for Raspberry Pi
 
+## this is a forked version from balena-io-playground/blinkt-server which i have modified to run on a pi0w with belana-cloud.
+
 Simple project for showing a tiny web-server with bad UI controlling an RPi with a Blinkt interface.
 
 
